@@ -20,9 +20,14 @@ Load the image so that kubectl can find it:
 minikube image load logging-mock-service:latest
 ```
 
-Then apply to run it:
+Apply the pod yaml through kubectl to get the logging service running:
 ```
 kubectl apply -f pod.yaml
+```
+
+Finally, execute this process:
+```
+go run main.go
 ```
 
 The service will log approximately 20000 lines, exit, and then restart.
