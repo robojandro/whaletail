@@ -32,7 +32,6 @@ go run main.go
 
 The service will log approximately 20000 lines, exit, and then restart.
 
-
 ### Related:
 - Kubernetes
 - Minikube
